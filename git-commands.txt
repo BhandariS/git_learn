@@ -1,0 +1,16 @@
+>> git init - To initialize the repository
+
+>> ls -a - Shows hidden files
+
+>> To move file from unttracked to Stages status -- git add <filename>
+
+>> To move file from Stagged to Tracked status -- git commmit -m "Commmit message"
+
+>> To move file from Staged to Untracked status -- git rm --cache <filename>
+
+>> To restore deleted files -- git restore <filename>
+
+>> To Create new branch with all commits of current branch -- git checkout -b <branchname>
+
+>> To delete the branch -- git branch -D <filename>
+
