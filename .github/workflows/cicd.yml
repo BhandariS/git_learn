@@ -1,0 +1,30 @@
+#This is the name of workflow
+name: cicd
+
+on: workflow_dispatch
+jobs:
+
+    code:
+        runs-on: ubuntu-latest
+        steps:
+            - name: This is code
+              run: echo "Code is available on github"
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: This is where we buill the code
+              run: echo "Build is ready"
+
+    Test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: This is where we buill the code
+              run: echo "Package is tested"
+    Deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: This is where we buill the code
+              run: echo "Code is Deployed"
+
+
+    
