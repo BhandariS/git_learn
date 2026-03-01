@@ -10,17 +10,20 @@ jobs:
             - name: This is code
               run: echo "Code is available on github"
     build:
+        needs: code
         runs-on: ubuntu-latest
         steps:
             - name: This is where we buill the code
               run: echo "Build is ready"
 
     Test:
+        needs: build
         runs-on: ubuntu-latest
         steps:
             - name: This is where we buill the code
               run: echo "Package is tested"
     Deploy:
+        needs: [build,Test]
         runs-on: ubuntu-latest
         steps:
             - name: This is where we buill the code
