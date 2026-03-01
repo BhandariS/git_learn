@@ -19,4 +19,12 @@ jobs:
               run: echo "Hello Dosto"
 
             - name: say hello to username
-              run: echo "Hello $whoami"
+              run: echo "Hello $USER"
+
+    details:
+          runs-on: ubuntu-latest
+
+          steps:
+             - name: docker version & Pythin version
+               run: docker --version & python --version
+          
