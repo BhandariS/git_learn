@@ -2,13 +2,16 @@
 
 name: Hello workflow
 
+#where you want to run
 on: 
    push:
       branches:
         - main
 # these are jobs inside the workflow
 jobs:
+# this is name of job
     greet:
+    #This is runner,eah job runs on runner
         runs-on: ubuntu-latest
     
         steps:
