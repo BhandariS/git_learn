@@ -3,10 +3,7 @@
 name: Hello workflow
 
 #where you want to run
-on: 
-   push:
-      branches:
-        - main
+on: workflow_dispatch
 # these are jobs inside the workflow
 jobs:
 # this is name of job
